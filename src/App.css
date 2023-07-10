@@ -30,6 +30,13 @@
 }
 
 /* Content */
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
 .design{
   background-image: url(./images/desktop/image-graphic-design.jpg);
   height: 400px;

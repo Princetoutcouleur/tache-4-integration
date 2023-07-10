@@ -15,7 +15,6 @@ const Content = () => {
               that do most of the marketing for you.
             </p>
             <a
-              variant="link"
               className="text-decoration-none fw-bold text-dark  border-bottom border-warning border-5"
             >
               Learn More
@@ -23,10 +22,10 @@ const Content = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
-          <img src={Egg} alt="" className="img-fluid w-100" />
+          <img src={Egg} alt="" className="img-fluid inner-img" />
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
-          <img src={Coupe} alt="" className="img-fluid" />
+          <img src={Coupe} alt="" className="img-fluid inner-img" />
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center ">
           <div className="p-5">
@@ -37,7 +36,6 @@ const Content = () => {
               extend your brand in digital places.
             </p>
             <a
-              variant="link"
               className="text-decoration-none fw-bold text-dark  border-bottom border-danger border-5"
             >
               Learn More
