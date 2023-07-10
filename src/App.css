@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#home{
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+/* banner */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-30px); 
+  }
+  60% {
+    transform: translateY(-15px); 
+  }
+}
+
+.banner h1{
+  font-size: 50px;
+}
+.banner img{
+  height: 200px;
+  animation: bounce 1s infinite;
+}
+
+/* Content */
+.design{
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 250px;
+}
+.photography{
+  background-image: url(./images/desktop/image-photography.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 250px;
+}
