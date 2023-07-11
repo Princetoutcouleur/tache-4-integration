@@ -5,7 +5,7 @@ import Coupe from "../images/desktop/image-stand-out.jpg"
 const Content = () => {
   return (
     <div className="conatiner-fluid">
-      <div className="row g-0">
+      <div id="about" className="row g-0">
         <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center ">
           <div className="p-5">
             <h1>Transform your brand</h1>
@@ -14,9 +14,7 @@ const Content = () => {
               brands grow fast. Engage your clients through compeling visuals
               that do most of the marketing for you.
             </p>
-            <a
-              className="text-decoration-none fw-bold text-dark  border-bottom border-warning border-5"
-            >
+            <a className="text-decoration-none fw-bold text-dark  border-bottom border-warning border-5">
               Learn More
             </a>
           </div>
@@ -35,14 +33,15 @@ const Content = () => {
               photographers, videographers and copywritters, we'll build and
               extend your brand in digital places.
             </p>
-            <a
-              className="text-decoration-none fw-bold text-dark  border-bottom border-danger border-5"
-            >
+            <a className="text-decoration-none fw-bold text-dark  border-bottom border-danger border-5">
               Learn More
             </a>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 design text-center">
+        <div
+          id="services"
+          className="col-lg-6 col-md-6 col-sm-12 design text-center"
+        >
           <h3>Graphic Design</h3>
           <p>
             Great design makes you memorable. We deliver artwork that
@@ -53,7 +52,8 @@ const Content = () => {
         <div className="col-lg-6 col-md-6 col-sm-12 photography text-center">
           <h3>Photography</h3>
           <p>
-            Increase your credibility by getting the most stunning, hight-quality photos that improve your business.
+            Increase your credibility by getting the most stunning,
+            hight-quality photos that improve your business.
           </p>
         </div>
       </div>

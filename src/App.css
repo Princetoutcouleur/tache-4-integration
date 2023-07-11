@@ -2,13 +2,46 @@
   padding: 0;
   margin: 0;
 }
-#home{
+/* Navbar */
+.home{
   background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
   color: white;
 }
+.bg-navbar{
+  background-color: #3DBEFF;
+}
 /* banner */
+.wrapper {
+  /* height: 100vh; */
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 100%;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 40px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); 
@@ -21,9 +54,9 @@
   }
 }
 
-.banner h1{
+/* .banner h1{
   font-size: 50px;
-}
+} */
 .banner img{
   height: 200px;
   animation: bounce 1s infinite;
@@ -39,15 +72,152 @@
 }
 .design{
   background-image: url(./images/desktop/image-graphic-design.jpg);
-  height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 250px;
+  padding-top: 300px;
 }
 .photography{
   background-image: url(./images/desktop/image-photography.jpg);
-  height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 250px;
+  padding-top: 300px;
 }
+/* Testimonials */
+
+.big-brother {
+ display: flex;
+ justify-content: space-between;
+}
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   border-radius: 20px;
+}
+
+.card-container {
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 100%;
+  width: 400px;
+  height: 450px;
+}
+
+.card-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  z-index: 10;
+  top: 0;
+  background-color: #3DBEFF;
+  transition: all ease-in-out 800ms;
+}
+
+.img-container {
+margin: 0 auto;
+transition: ease-in-out 800ms;
+}
+
+.img-container img {
+	border-radius: 50%;
+	border: 5px solid #fff;
+	height: 120px;
+	width: 120px;
+  transition: ease-in-out 800ms;
+}
+
+.meta-container {
+  color: rgb(0, 83, 156, 1);
+  transition: ease-in-out 800ms;
+}
+
+
+.test-container {
+  filter: blur(15px);
+  color: #555;
+	font-size: 21px;
+	line-height: 30px;
+	margin: 0;
+  padding: 10px 30px;
+  transition: ease-in-out 800ms;
+}
+
+
+
+
+
+
+
+
+.card-container:hover {
+  
+  .card-bg {
+  margin-top: 300px;
+  background-color: #3DBEFF;
+  }
+  
+}
+
+.card-container:hover {
+  
+  .img-container {
+    margin-top: -375px;
+  }
+  
+}
+
+.card-container:hover {
+  
+  .test-container {
+    filter: none;
+  }
+  
+}
+
+.card-container:hover {
+  
+  .meta-container {
+  color: white;
+}
+  
+}
+
+/* Gallery */
+#gallery{
+  height: 200px;
+}
+.image1{
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+.image2{
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+.image3{
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+}
+.image4{
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+.kodfun-galeri {
+	        display: flex;
+	        height: 25rem;
+	    }
+	    .kodfun-galeri > div {
+	        flex: 1;
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        background-size: auto 100%;
+	        transition: all .9s cubic-bezier( .30, .4, .40, 1.4);
+	    }
+	    .kodfun-galeri > div:hover {
+	        flex: 2.5;
+	    }

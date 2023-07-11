@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="pt-3">
+    <Navbar expand="lg" className="pt-3 fixed-top bg-navbar">
       <Container>
         <Navbar.Brand href="#home" className="fs-3 fw-bold text-light">
           Sunnyside
